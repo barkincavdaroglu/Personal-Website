@@ -1,6 +1,6 @@
 import React from 'react'
 import {getProject} from "./ProjectsData";
-import {Link, Router} from "react-router-dom"
+import ModalImage from "react-modal-image";
 
 
 function ProjectOverviewHeader(props, history) {
@@ -26,7 +26,8 @@ function ProjectOverviewPhotos(props) {
     return (
         <div className="image">
             <h2>Looks like...</h2>
-            <img src={props.project.projectImage} alt="alt"/>
+            <ModalImage className="project-thumbnail" small={props.project.projectImage} large={props.project.projectImage} alt="granite state image"/>
+            {/*<img className="project-thumbnail" src={props.project.projectImage} alt="alt"/>*/}
         </div>
     )
 }
