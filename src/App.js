@@ -19,8 +19,9 @@ function App() {
                       <Route exact path="/" component={Projects}/>
                       <Route exact path="/:id" component={ProjectOverview}/>
                   </Switch>
+                  <Methodology />
               </div>
-              <Methodology />
+
           </div>
       </React.Fragment>
   );

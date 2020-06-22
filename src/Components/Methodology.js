@@ -24,10 +24,10 @@ export default function Metholodogy() {
                         Observant
                     </h4>
                     <h3 className="value-subtitle">
-                        Ask questions and hold on before jumping onto conclusions: Minimize bias and be on the lookout for insights that hide in irrelevant everyday places, activities and things, like food.
+                        Ask questions and hold on before jumping onto conclusions: Minimize bias and be on the lookout for insights that hide in <span className="strikethrough">irrelevant</span> everyday places, activities and things, like food.
                     </h3>
                     <p className="value-paragraph">
-                        What makes a good food? How its taste related to its proportions? Why chefs usually prefer cooking in small proportions? Maybe because they have more control over it.
+                        What makes a good food? How its taste related to its proportions? Why chefs usually prefer cooking in small proportions? <span className="strikethrough">Maybe because they have more control over it.</span>
                     </p>
                 </div>
                 <div className="patient">
@@ -35,7 +35,7 @@ export default function Metholodogy() {
                         Patient and Compromising
                     </h4>
                     <h3 className="value-subtitle">
-                        Know when to give up reallocate your time, shift focus and take a step back.
+                        Know when to <span className="strikethrough">give up</span> reallocate your time, shift focus and take a step back.
                     </h3>
                     <p className="value-paragraph">
                         Sure, “sky is the limit.” But consider the time and effort it would take to build a rocket to reach there. Can a plane ride at 38.000 feet I so often take substitute? Can I optimize, reshape and then incorporate my task into something I already do with much less effort and time? There is always more than one way to reach a goal: don’t rush to take the first path and know the tradeoffs so I can decide when “what is lost” is lesser than “what is gained.”
@@ -49,7 +49,7 @@ export default function Metholodogy() {
                         And finally… reflect.
                     </h3>
                     <p className="value-paragraph">
-                        Treat knowledge and imagination like a directed graph and reflect, everyday, to create new edges between each vertices: if tasked to find the shortest path between vertex A and Z, have your graph connected well enough so there is only one path between each combination of distinct vertices, shortest path possible.
+                        Treat knowledge and imagination like a directed graph and reflect, everyday, to create new edges between each vertices: if tasked to find the shortest path between vertex A and Z, have your graph connected well enough so there is only one path between each combination of distinct vertices: shortest path possible.
                     </p>
                 </div>
 

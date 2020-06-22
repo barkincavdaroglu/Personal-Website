@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #231E34;
 }
 
 
@@ -17,6 +16,10 @@ body {
   height: 1400px;
   width: auto;
   margin: 0px;
+}
+
+.hero_below {
+  background: linear-gradient(180deg, #231E34 33.15%, #0B0813 100%);;
 }
 
 .HeroGroup {
@@ -63,6 +66,10 @@ body {
   line-height: 175%;
   font-size: 24px;
   opacity: 0.92;
+}
+
+.strikethrough {
+  text-decoration: line-through;
 }
 
 .linear-wipe {
