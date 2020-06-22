@@ -5,9 +5,312 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #231E34;
+}
+
+
+.Hero {
+  background: url('images/heroimage2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 1400px;
+  width: auto;
+  margin: 0px;
+}
+
+.HeroGroup {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 140px 50px;
+  text-align: center;
+}
+
+
+.Hero h1 {
+  font-family: Gilroy, sans-serif;
+  src: url("./font/Gilroy-ExtraBold.otf");
+  margin: 40px;
+  color: white;
+  font-size: 100px;
+  line-height: 1.2;
+  opacity: 0;
+  animation: HeroAnimation;
+  animation-duration: 5s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+;
+}
+
+.Hero p {
+  font-family: Gilroy, sans-serif;
+  src: url("./font/Gilroy-Light.otf");
+  margin-top: -20px;
+  color: rgba(255,255,255,0.95);
+  font-size: 36px;
+  line-height: 1.5;
+  font-weight: 400;
+  animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
+}
+
+.project-paragraph {
+  font-family: "SF Pro Rounded";
+  font-weight: 400;
+  padding-left: 25%;
+  padding-right: 25%;
+  line-height: 175%;
+  font-size: 26px;
+  opacity: 0.92;
+}
+
+.linear-wipe {
+  font-family: Gilroy, sans-serif;
+  src: url("./font/Gilroy-ExtraBold.otf");
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #fff), color-stop(40%, #ff0), color-stop(60%, #ff0), color-stop(80%, #fff));
+  background: linear-gradient(150.76deg, #FF688C 3.7%, #FFAB5F 18.2%, #FFEF5E 33.66%, #61FFE3 49.6%, #8571FF 64.58%, #DA71FF 79.07%, #FF688D 93.08%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: shine 1s linear infinite;
+  animation: shine 3.5s linear infinite;
+}
+
+@-webkit-keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+  padding-top: 80px;
+}
+
+.methodology-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+  padding-top: 80px;
+}
+
+.hero_container {
+  position: relative;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  column-gap: 40px;
+  margin-top: 100px;
+}
+
+.projectoverview_subcontainer {
+  margin-top: 50px;
+  position: relative;
+  min-height: 725px;
+  display: grid;
+  grid-template-areas: "description image goal" "description image tools";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  line-height: 175%;
+  background: white;
+  border-radius: 25px;
+}
+
+.values-container {
+  margin-top: 50px;
+  position: relative;
+  display: grid;
+  grid-template-areas: "effortful" "observant" "patient" "reflective";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+}
+
+.effortful {
+  grid-area: effortful;
+  height: auto;
+  justify-self: start;
+  align-self: start;
+}
+
+.effortful-title {
+  font-size: 20px;
+  color: #FF8086;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.value-subtitle {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  line-height: 155%;
+}
+
+.value-paragraph {
+  font-size: 24px;
+  color: white;
+  font-weight: lighter;
+  text-align:left;
+  line-height: 155%;
+}
+
+.observant {
+  grid-area: observant;
+  height: auto;
+  justify-self: center;
+  align-self: start;
+}
+
+.observant-title {
+  font-size: 24px;
+  color: #FFC72F;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.patient {
+  grid-area: patient;
+  height: auto;
+  justify-self: center;
+  align-self: start;
+}
+
+.patient-title {
+  color: #69FFDD;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.reflective {
+  grid-area: reflective;
+  height: auto;
+  justify-self: center;
+  align-self: start;
+}
+
+.reflective-title {
+  color: #8183FC;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.description {
+  grid-area: description;
+  height:auto;
+  justify-self: center;
+  align-self: start;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 15%;
+  color: #231E34;
+}
+
+.image {
+  grid-area: image;
+  height: auto;
+  justify-self: center;
+  align-self: start;
+  color: #231E34;
+  padding-top: 15%;
+}
+
+.goal {
+  grid-area: goal;
+  height: auto;
+  justify-self: center;
+  align-self: start;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: #231E34;
+  padding-top: 15%;
+}
+
+.tools {
+  grid-area: tools;
+  height: auto;
+  justify-self: center;
+  align-self: start;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: #231E34;
+  padding-top: 15%;
+}
+
+.overview_button {
+  width: 98px;
+  height: 24px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+}
+
+.go-back-container {
+  float: left;
+}
+
+.go-back {
+  background: rgba(1,1,1,0);
+  border:none;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.go-back-icon {
+  padding-right: 10px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media (max-width: 640px) {
+  .Hero {
+    height: 800px;
+  }
+  .HeroGroup {
+    max-width: 500px;
+  }
+  .Hero h1 {
+    font-size: 50px;
+  }
+  .Hero p {
+    font-size: 26px;
+  }
+}
+
+@keyframes HeroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+

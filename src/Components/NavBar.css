@@ -1,0 +1,87 @@
+
+.Header {
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 100;
+    font-size: 22px;
+}
+
+.scrolled {
+    background: white;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 100;
+    font-size: 22px;
+}
+
+.scrolled a {
+    font-family: "SF Pro Rounded";
+    font-size: 22px;
+    color: #242135;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.scrolled button {
+    font-family: "SF Pro Rounded";
+    color:white;
+    padding: 8px 20px;
+    font-size:22px;
+    background: mediumslateblue;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.HeaderGroup {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.Header a{
+    font-family: "SF Pro Rounded";
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.Header button {
+    font-family: "SF Pro Rounded";
+    color:white;
+    padding: 8px 20px;
+    font-size:22px;
+    background: mediumslateblue;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Header button:hover {
+    background: hotpink;
+    box-shadow: 0 10px 20px rgba(0,0,0, 0.25);
+    transform: translateY(-3px);
+
+}
+
+
+@media (max-width: 640px) {
+    .Header {
+        font-size: 20px;
+    }
+    .Header button {
+        font-size: 20px;
+    }
+}
