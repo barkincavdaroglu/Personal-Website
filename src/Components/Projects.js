@@ -19,7 +19,7 @@ class Projects extends React.Component {
     render() {
         return (
             <div className="container">
-                <h2 className="linear-wipe">My Work.</h2>
+                <h2><span className="values-white-header">My </span> <span className="linear-wipe">Work</span>.</h2>
                 <div className="project-paragraph">
                     <p>If you want a brief overview of my projects, click. If you want to read the case studies (if there is any), click.</p>
                 </div>

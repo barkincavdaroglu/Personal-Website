@@ -4,8 +4,8 @@ import "../index.css"
 export default function Metholodogy() {
     return (
         <div className="methodology-container">
-            <h2 className="linear-wipe values-header">
-                Values I Live By.
+            <h2><span className="linear-wipe values-header">Values</span>
+                <span className="values-white-header values-header"> I Live By.</span>
             </h2>
             <div className="values-container">
                 <div className="effortful">
@@ -38,7 +38,7 @@ export default function Metholodogy() {
                         Know when to <span className="strikethrough">give up</span> reallocate your time, shift focus and take a step back.
                     </h3>
                     <p className="value-paragraph">
-                        Sure, “sky is the limit.” But consider the time and effort it would take to build a rocket to reach there. Can a plane ride at 38.000 feet I so often take substitute? Can I optimize, reshape and then incorporate my task into something I already do with much less effort and time? There is always more than one way to reach a goal: don’t rush to take the first path and know the tradeoffs so I can decide when “what is lost” is lesser than “what is gained.”
+                        Sure, “sky is the limit.” But consider the time and effort it would take to build a rocket to reach there. Can I optimize, reshape and then incorporate my task into something I already do with much less effort and time? There is always more than one way to reach a goal: don’t rush to take the first path and know the tradeoffs so I can decide when “what is lost” is lesser than “what is gained.”
                     </p>
                 </div>
                 <div className="reflective">

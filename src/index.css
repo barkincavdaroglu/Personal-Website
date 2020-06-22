@@ -79,7 +79,7 @@ body {
   margin: 0;
   text-align: center;
   background: -webkit-gradient(linear, left top, right top, color-stop(20%, #fff), color-stop(40%, #ff0), color-stop(60%, #ff0), color-stop(80%, #fff));
-  background: linear-gradient(150.76deg, #FF688C 3.7%, #FFAB5F 18.2%, #FFEF5E 33.66%, #61FFE3 49.6%, #8571FF 64.58%, #DA71FF 79.07%, #FF688D 93.08%);
+  background: linear-gradient(90deg, #FF8086 13.7%, #FFC72F 33.66%, #69FFDD 64.58%, #8183FC 79.07%, #FF8086 93.08%);
   background-size: 200% auto;
   color: #000;
   background-clip: text;
@@ -88,6 +88,12 @@ body {
   -webkit-text-fill-color: transparent;
   -webkit-animation: shine 1s linear infinite;
   animation: shine 3.5s linear infinite;
+}
+
+.values-white-header{
+  font-family: Gilroy, sans-serif;
+  src: url("./font/Gilroy-ExtraBold.otf");
+  font-size: 44px;
 }
 
 @-webkit-keyframes shine {
@@ -140,7 +146,29 @@ body {
   grid-template-rows: repeat(2, 1fr);
   line-height: 175%;
   background: white;
-  border-radius: 25px;
+  border-radius: 16px;
+}
+
+.text-left-align {
+  text-align: left;
+}
+
+.toolsArray {
+  display: grid;
+  grid-template-columns: repeat(3, 0.3fr);
+  margin-top: 30px;
+}
+
+.tool-icon {
+  margin-top: 10px;
+  width: 40%;
+}
+
+.icondiv {
+  background: white;
+  height: 100%;
+  box-shadow: 0 10px 20px rgba(0,0,0, 0.20);
+  border-radius: 10px;
 }
 
 .values-container {
@@ -150,8 +178,6 @@ body {
   grid-template-areas: "effortful" "observant" "patient" "reflective";
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
-
-
 }
 
 .values-header {
@@ -272,8 +298,8 @@ body {
   height: auto;
   justify-self: center;
   align-self: start;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 50px;
+  padding-right: 50px;
   color: #231E34;
   padding-top: 15%;
 }
@@ -283,10 +309,10 @@ body {
   height: auto;
   justify-self: center;
   align-self: start;
-  padding-left: 15%;
-  padding-right: 15%;
   color: #231E34;
-  padding-top: 15%;
+  padding-left: 50px;
+  padding-right: 50px;
+
 }
 
 .overview_button {

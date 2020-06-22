@@ -16,8 +16,8 @@ function ProjectOverviewHeader(props, history) {
 function ProjectOverviewSummary(props) {
     return (
         <div className="description">
-            <h2>In short...</h2>
-            <p>{props.project.projectDescription}</p>
+            <h2 className="text-left-align">In short...</h2>
+            <p className="text-left-align">{props.project.projectDescription}</p>
         </div>
     )
 }
@@ -25,18 +25,24 @@ function ProjectOverviewSummary(props) {
 function ProjectOverviewPhotos(props) {
     return (
         <div className="image">
-            <h2>Looks like...</h2>
+            <h2 className="text-left-align">Looks like...</h2>
             <ModalImage className="project-thumbnail" small={props.project.projectImage} large={props.project.projectImage} alt="granite state image"/>
             {/*<img className="project-thumbnail" src={props.project.projectImage} alt="alt"/>*/}
         </div>
     )
 }
 
+
 function ProjectOverviewTools(props) {
     return (
         <div className="tools">
-            <h2>Did it with...</h2>
-            <p>{props.project.projectTools}</p>
+            <h2 className="text-left-align">Did it with...</h2>
+            <div className="toolsArray">
+                { props.project.projectTools.map((tool, idx) =>
+                        <div className="icondiv"><img className="tool-icon" src={tool} key={idx}/></div>
+                    )
+                }
+            </div>
         </div>
     )
 }
@@ -44,8 +50,8 @@ function ProjectOverviewTools(props) {
 function ProjectOverviewGoal(props) {
     return (
         <div className="goal">
-            <h2>Wanted to...</h2>
-            <p>{props.project.projectGoal}</p>
+            <h2 className="text-left-align">Wanted to...</h2>
+            <p className="text-left-align">{props.project.projectGoal}</p>
         </div>
     )
 }
@@ -59,7 +65,7 @@ export default function ProjectOverview({match, history}) {
                 <button className="go-back" onClick={() => history.push('/')}>
                     <span className="go-back-icon">
                     <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 8H1M8 15L1 8 8 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 8H1M8 15L1 8 8 1" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     </span>Go Back
                 </button>
