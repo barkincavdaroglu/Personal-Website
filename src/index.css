@@ -61,14 +61,14 @@ body {
   padding-left: 25%;
   padding-right: 25%;
   line-height: 175%;
-  font-size: 26px;
+  font-size: 24px;
   opacity: 0.92;
 }
 
 .linear-wipe {
   font-family: Gilroy, sans-serif;
   src: url("./font/Gilroy-ExtraBold.otf");
-  font-size: 50px;
+  font-size: 44px;
   margin: 0;
   text-align: center;
   background: -webkit-gradient(linear, left top, right top, color-stop(20%, #fff), color-stop(40%, #ff0), color-stop(60%, #ff0), color-stop(80%, #fff));
@@ -102,16 +102,20 @@ body {
   padding-top: 80px;
 }
 
+.lighter-title {
+  font-weight: 300;
+}
+
 .methodology-container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   color: white;
-  padding-top: 80px;
+  margin-top: 100px;
 }
 
 .hero_container {
   position: relative;
-  min-height: 500px;
+  min-height: 400px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
@@ -122,7 +126,7 @@ body {
 .projectoverview_subcontainer {
   margin-top: 50px;
   position: relative;
-  min-height: 725px;
+  min-height: 600px;
   display: grid;
   grid-template-areas: "description image goal" "description image tools";
   grid-template-columns: repeat(3, 1fr);
@@ -139,6 +143,12 @@ body {
   grid-template-areas: "effortful" "observant" "patient" "reflective";
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
+
+
+}
+
+.values-header {
+  margin-bottom: 100px;
 }
 
 .effortful {
@@ -149,10 +159,11 @@ body {
 }
 
 .effortful-title {
-  font-size: 20px;
+  font-size: 22px;
   color: #FF8086;
   text-align: left;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 .value-subtitle {
@@ -161,14 +172,16 @@ body {
   font-weight: bold;
   text-align: left;
   line-height: 155%;
+  margin-top: 10px;
 }
 
 .value-paragraph {
-  font-size: 24px;
+  font-size: 22px;
   color: white;
-  font-weight: lighter;
+  font-weight: 300;
   text-align:left;
-  line-height: 155%;
+  line-height: 175%;
+  color: #E7E6ED;
 }
 
 .observant {
@@ -176,13 +189,15 @@ body {
   height: auto;
   justify-self: center;
   align-self: start;
+  margin-top: 50px;
 }
 
 .observant-title {
-  font-size: 24px;
+  font-size: 22px;
   color: #FFC72F;
   text-align: left;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 .patient {
@@ -190,13 +205,15 @@ body {
   height: auto;
   justify-self: center;
   align-self: start;
+  margin-top: 50px;
 }
 
 .patient-title {
   color: #69FFDD;
-  font-size: 24px;
+  font-size: 22px;
   text-align: left;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 .reflective {
@@ -204,13 +221,15 @@ body {
   height: auto;
   justify-self: center;
   align-self: start;
+  margin-top: 50px;
 }
 
 .reflective-title {
   color: #8183FC;
-  font-size: 24px;
+  font-size: 22px;
   text-align: left;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 .description {

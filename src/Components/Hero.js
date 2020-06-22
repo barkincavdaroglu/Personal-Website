@@ -6,7 +6,7 @@ export default function Hero() {
         <div className="Hero">
             <div className="HeroGroup">
                 <h1>
-                    Barkin <br/> Cavdaroglu
+                        <span>Barkin</span><br/> Cavdaroglu
                 </h1>
                 <p>
                     Designing for delight.

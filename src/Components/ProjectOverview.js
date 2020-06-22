@@ -7,7 +7,7 @@ function ProjectOverviewHeader(props, history) {
     return (
         <div>
             <h2>
-                Project: {props.project.projectName}
+                <span className="lighter-title">Project:</span> {props.project.projectName}
             </h2>
         </div>
     )

@@ -4,7 +4,7 @@ import "../index.css"
 export default function Metholodogy() {
     return (
         <div className="methodology-container">
-            <h2 className="linear-wipe">
+            <h2 className="linear-wipe values-header">
                 Values I Live By.
             </h2>
             <div className="values-container">
