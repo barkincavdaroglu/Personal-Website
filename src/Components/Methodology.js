@@ -5,7 +5,7 @@ export default function Metholodogy() {
     return (
         <div className="methodology-container">
             <h2><span className="linear-wipe values-header">Values</span>
-                <span className="values-white-header values-header"> I Live By.</span>
+                <span className="values-white-header values-header"> I Live By</span>
             </h2>
             <div className="values-container">
                 <div className="effortful">
@@ -13,7 +13,7 @@ export default function Metholodogy() {
                         Effortful
                     </h4>
                     <h3 className="value-subtitle">
-                        Go the extra mile for everything I do
+                        Go the extra mile for everything you do
                     </h3>
                     <p className="value-paragraph">
                         If I complete a task while knowing there was one more thing I could do to make it better, I failed.

@@ -47,8 +47,8 @@ body {
 }
 
 .Hero p {
-  font-family: Gilroy, sans-serif;
-  src: url("./font/Gilroy-Light.otf");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+  font-family: 'Roboto', sans-serif;
   margin-top: -20px;
   color: rgba(255,255,255,0.95);
   font-size: 36px;
@@ -59,7 +59,6 @@ body {
 }
 
 .project-paragraph {
-  font-family: "SF Pro Rounded";
   font-weight: 400;
   padding-left: 25%;
   padding-right: 25%;
@@ -136,14 +135,33 @@ body {
   margin-top: 100px;
 }
 
+
+.go-back-container {
+  grid-area: go-back;
+  height: 100%;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+  border-bottom: 1px solid #dfdfdf;
+}
+.project-title {
+  grid-area: project-title;
+  height: 100%;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+  color: #0B0813;
+  border-bottom: 1px solid #dfdfdf;
+}
+
 .projectoverview_subcontainer {
-  margin-top: 50px;
+  margin-top: 20px;
   position: relative;
-  min-height: 600px;
+  min-height: 400px;
   display: grid;
-  grid-template-areas: "description image goal" "description image tools";
+  grid-template-areas: "go-back project-title case-study" "description image goal" "description image tools";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
   line-height: 175%;
   background: white;
   border-radius: 16px;
@@ -272,7 +290,6 @@ body {
   align-self: start;
   padding-left: 15%;
   padding-right: 15%;
-  padding-top: 15%;
   color: #231E34;
 }
 
@@ -280,9 +297,12 @@ body {
   grid-area: image;
   height: auto;
   justify-self: center;
-  align-self: start;
+  align-self: center;
   color: #231E34;
-  padding-top: 15%;
+  background: linear-gradient(342.32deg, #FF7777 0%, #FFB77D 100%);
+  border-radius: 16px;
+  padding: 25px;
+  margin: 15px;
 }
 
 .project-thumbnail {
@@ -296,12 +316,11 @@ body {
 .goal {
   grid-area: goal;
   height: auto;
-  justify-self: center;
+  justify-self: start;
   align-self: start;
   padding-left: 50px;
   padding-right: 50px;
   color: #231E34;
-  padding-top: 15%;
 }
 
 .tools {
@@ -326,16 +345,17 @@ body {
   font-size: 14px;
 }
 
-.go-back-container {
-  float: left;
-}
-
 .go-back {
   background: rgba(1,1,1,0);
   border:none;
   font-size: 16px;
-  color: white;
+  color: #0B0813;
   cursor: pointer;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+
 }
 
 .go-back-icon {
