@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 
 function ProjectCard(props) {
     return (
-            <div>
+            <div className="project-card">
                 <h2>{props.project.projectName}</h2>
                 <p>{props.project.projectSummary}</p>
                 <Link to={props.id}><button className="overview_button">Overview</button></Link>

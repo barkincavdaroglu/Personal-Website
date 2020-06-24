@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
 import Projects from "./Components/Projects";
-import {Route, Router, Switch} from "react-router-dom";
-import { createBrowserHistory as createHistory } from 'history'
+import {Route, Switch} from "react-router-dom";
 import ProjectOverview from "./Components/ProjectOverview";
 import Hero from "./Components/Hero";
 import NavBar from "./Components/navBar";

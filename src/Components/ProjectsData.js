@@ -7,7 +7,8 @@ const projectsData = [
         projectSummary: "In short we wanted to this or that for project 1",
         projectGoal: "Design and develop a website that was easy to navigate, with elements of design that are young, community-oriented and 100% accessible to everyone.",
         projectTools: [require("../images/figmaLogo.png"), require("../images/mazedesign.png")],
-        projectPhotos: "../images/granite-state-thumbnail.png"
+        projectPhotos: "../images/granite-state-thumbnail.png",
+        personaProfile: [23, 17]
     },
     {
         _id: "chinese-storytelling-overview",

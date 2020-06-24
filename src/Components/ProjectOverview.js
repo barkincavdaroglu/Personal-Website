@@ -1,6 +1,9 @@
 import React from 'react'
 import {getProject} from "./ProjectsData";
 import ModalImage from "react-modal-image";
+import { Popup } from 'semantic-ui-react'
+import {Route} from "react-router-dom"
+
 
 
 function ProjectOverviewHeader(props, history) {
@@ -31,16 +34,43 @@ function ProjectOverviewPhotos(props) {
     )
 }
 
+function Checker({age}) {
+    if (age > 22) {
+        return (
+                <div className="personaBlock">
+                    <Popup className="popup" key={`${age}`} trigger={<img className="personaImage" src={require("../images/persona22above.png")} alt="some"/>}>
+                        Group of people that
+                        would want to connect
+                        with students for 
+                        volunteering, job, etc.
+                    </Popup>
+                    <p className="persona-title">Organization Rep.</p>
+                    <p className="persona-age">Age: {`${age}`}</p>
+                </div>
+            
+        )
+    }
+    else if (age < 22) {
+        return (
+            <div className="personaBlock">
+                <Popup className="popup" content="Organization Rep." key={`${age}`} trigger={<img className="personaImage" src={require("../images/persona22below.png")} alt="some"/>}/>
+                <p className="persona-title">Student</p>
+                <p className="persona-age">Age: {`${age}`}</p>
+            </div>
+        )
+    }
+    else {
+        return null
+    }
+}
 
 function ProjectOverviewTools(props) {
     return (
         <div className="tools">
-            <h2 className="text-left-align">Tools</h2>
+            <h2 className="text-left-align light-purple">Personas</h2>
             <div className="toolsArray">
-                { props.project.projectTools.map((tool, idx) =>
-                        <div className="icondiv"><img className="tool-icon" src={tool} key={idx} alt="t"/></div>
-                    )
-                }
+                {props.project.personaProfile.map((age, idx) => 
+                <Checker key={idx} age={age}/>)}
             </div>
         </div>
     )
@@ -61,9 +91,25 @@ function GoBackButton(props) {
             <button className="go-back" onClick={() => props.history.push('/')}>
                     <span className="go-back-icon">
                     <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 8H1M8 15L1 8 8 1" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M15 8H1M8 15L1 8 8 1" stroke="#E9E9FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     </span>Go Back
+            </button>
+        </div>
+    )
+}
+
+function CaseStudyButton(props) {
+    return (
+        <div className="case-study-container">
+            
+            <button className="case-study" onclick="location.href='https://google.com';" value="Go to Google">
+                    <span className="go-back-icon">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 8H1M8 15L1 8 8 1" stroke="#E9E9FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    </span><a className="a-link" target="_blank" href="https://medium.com/">Case Study</a>
+                    
             </button>
         </div>
     )
@@ -76,6 +122,7 @@ export default function ProjectOverview({match, history}) {
             <div className="projectoverview_subcontainer">
                 <ProjectOverviewHeader project={project} />
                 <GoBackButton history={history} />
+                <CaseStudyButton />
                 {/*<div className="go-back-container">
                     <button className="go-back" onClick={() => history.push('/')}>
                     <span className="go-back-icon">
